@@ -190,7 +190,6 @@ repairCfg = {
 		"You removed some rust from the spark tube",
 		"You yelled at your vehicle, and it somehow had an effect"
 	},
-	fixMessageCount = 7,
 
 	noFixMessages = {
 		"You checked the oil plug. It's still there",
@@ -200,7 +199,6 @@ repairCfg = {
 		"You added rust-preventer to the spark tube. It made no difference",
 		"Never fix something that ain't broken they said. You didn't listen. At least it didn't get worse"
 	},
-	noFixMessageCount = 6
 }
 
 RepairEveryoneWhitelisted = true

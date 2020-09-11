@@ -45,8 +45,8 @@ math.randomseed(GetGameTimer());
 local tireBurstMaxNumber = cfg.randomTireBurstInterval * 1200; 												-- the tire burst lottery runs roughly 1200 times per minute
 if cfg.randomTireBurstInterval ~= 0 then tireBurstLuckyNumber = math.random(tireBurstMaxNumber) end			-- If we hit this number again randomly, a tire will burst.
 
-local fixMessagePos = math.random(repairCfg.fixMessageCount)
-local noFixMessagePos = math.random(repairCfg.noFixMessageCount)
+local fixMessagePos = math.random(#repairCfg.fixMessages)
+local noFixMessagePos = math.random(#repairCfg.noFixMessages)
 
 -- Display blips on map
 Citizen.CreateThread(function()
